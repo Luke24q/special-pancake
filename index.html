@@ -94,7 +94,7 @@
         let checkSubscription = 1;    // Замените на 1, если проверка подписки нужна, на 0, если не нужна
 
         window.addEventListener("load", async () => {
-            const response = await fetch('https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd28rvw/getChatMember?chat_id=-1002100648108&user_id=' + tg.initDataUnsafe.user.id);
+            const response = await fetch('https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd28rvw/getChatMember?chat_id=-1002050942957&user_id=' + tg.initDataUnsafe.user.id);
             const data = await response.json();
 
             const response2 = await fetch('https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd28rvw/getChatMember?chat_id=-1002049988652&user_id=' + tg.initDataUnsafe.user.id);
@@ -114,7 +114,7 @@ var url = 'https://api.telegram.org/bot6916581709:AAEekfXrJLLa6TF0lIP7hrZaS_D8xd
                     xhr.send();
                     subscriptionStatus.textContent = "✅ Ты участвуешь!";
                 } else {
-                    subscriptionStatus.innerHTML = '❌ Отклонено: <br> Подпишись на необходимые соцсети: <a href="https://t.me/PomelkaShop">Канал 1</a>, <a href="https://t.me/RAVT_METRO">Канал 2</a>';
+                    subscriptionStatus.innerHTML = '❌ Отклонено: <br> Подпишись на необходимые соцсети: <a href="https://t.me/+3AiFENora-9mN2Ni">Канал 1</a>, <a href="https://t.me/RAVT_METRO">Канал 2</a>';
                 }
             } else {
                 subscriptionStatus.textContent = "Розыгрыш завершен или еще не начался";
